@@ -12,7 +12,7 @@ Ex:python Lab5.py 97
 
 test_number = int(sys.argv[1])
 print(test_number)
-#TODO part
+# TODO part
 '''
 you need write 2 program(Ch03, page16)
 1.Naive algorithm
@@ -33,3 +33,30 @@ Meanwhile, when you run "python Lab5.py 6", you should see the result is
 not a prime number
 not a prime number
 '''
+
+n_i = 2
+n_prime = True
+while (n_i < test_number):
+    if (test_number % n_i != 0):
+        n_i += 1
+    else:
+        n_prime = False
+        break
+if (n_prime):
+    print("test_number is prime")
+else:
+    print("not a prime number")
+
+q_i = 2
+number_sqrt = test_number ** 0.5
+q_prime = True
+while (q_i < number_sqrt):
+    if (test_number % q_i != 0):
+        q_i += 1
+    else:
+        q_prime = False
+        break
+if (q_prime):
+    print("test_number is prime")
+else:
+    print("not a prime number")
