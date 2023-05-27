@@ -1,4 +1,8 @@
+s = '2 5 8 1 9 2 5 2'
+M = map(int, s.split())
 
+MS = set(M)
 
-num=5
-print(str(num)+" Ha")
+print(MS) # ??
+MS = set(map(int, s.split()))
+print(MS) 
