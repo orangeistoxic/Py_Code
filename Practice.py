@@ -1,8 +1,15 @@
-s = '2 5 8 1 9 2 5 2'
-M = map(int, s.split())
-
-MS = set(M)
-
-print(MS) # ??
-MS = set(map(int, s.split()))
-print(MS) 
+class student: # design a class, datatype
+    id = ''
+    name = ''
+    age = 0
+    scores = []
+James = student() # object instancing
+James.id = 'A123'
+James.name = 'James'
+James.age = 18
+James.scores = [90.0, 100.0, 85.0]
+print(James.id)
+print(James.name)
+print(James.age)
+print(James.scores)
+print(type(James))
