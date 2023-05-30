@@ -1,3 +1,8 @@
-s1 = input()
-s2 = input()
-print( s1 is s2 )
+def addText(text1, text2, sep = ' ', end = '.'):
+    return text1 + sep + text2 + end
+s = addText('Hi', 'James', '_', '?')
+print(s)
+s = addText('Hi', 'James')
+print(s)
+s = addText('Hi', 'James', '_')
+print(s)
